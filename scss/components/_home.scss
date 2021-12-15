@@ -1,0 +1,30 @@
+@import "../base/colors";
+@import "../base/fonts";
+.home-menu {
+    padding-top: 6.3rem;
+    padding-bottom: 6rem;
+    .container-home {
+        font-family: $font-ppal;
+        font-weight: 900;
+        .buscador-reserva {
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            .titulo-home {
+                font-size: 3rem;
+                color: $colorPrincipal;
+            }
+            .what-container,
+            .where-container {
+                font-weight: 400;
+                color: $colorSecundario;
+            }
+        }
+        .img-home {
+            width: 30%;
+        }
+    }
+}

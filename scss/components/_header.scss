@@ -1,0 +1,18 @@
+@import "../base/colors";
+@import "../base/fonts";
+.container-fluid {
+    .text-marca {
+        color: $colorPrincipal !important;
+        font-family: $font-ppal;
+    }
+}
+
+.btn-outline-secondary {
+    border-color: $colorPrincipal !important;
+    color: $colorPrincipal !important;
+    &:hover {
+        background-color: $colorPrincipal !important;
+        border: none;
+        color: white !important;
+    }
+}

@@ -1,0 +1,175 @@
+@import "../base/colors";
+@import "../base/fonts";
+@import "../base/extends";
+
+// BUSCADOR EN HEADER //
+.container-buscador-header {
+    border-radius: 30px;
+    border: 1px solid whitesmoke;
+    width: 40% !important;
+    padding: 1px;
+    .buscador-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-family: $font-ppal;
+            font-size: 13px;
+            font-weight: 500;
+            color: $colorSecundario;
+        }
+        input {
+            font-family: $font-ppal;
+            font-size: 13px;
+            color: $colorSecundario;
+            border-radius: 40px;
+            border: none;
+            padding: .6rem;
+        }
+        #btn-submit-header {
+            background-color: transparent;
+            border: none;
+        }
+        .submit-btn-header {
+            border: 1px solid $colorPrincipal;
+            color: $colorPrincipal;
+            border-radius: 50px;
+            background-color: $colorPrincipal;
+            padding: .8rem;
+            &:hover {
+                background-color: $colorPrincipal;
+                color: $colorPrincipal;
+            }
+        }
+    }
+}
+
+.container-autocomplete-header {
+    display: none;
+    width: 30% !important;
+    position: absolute;
+    z-index: 9999;
+    left: 317px;
+    top: 55px;
+    border-radius: 10px;
+    overflow-y: auto;
+    height: 200px;
+    .autocomplete-find {
+        list-style: none;
+        border-radius: 10px;
+        padding-left: 0;
+        li {
+            background-color: white;
+            padding: 10px;
+            padding-left: 1.5rem;
+            &:first-child {
+                padding-top: 20px;
+            }
+            &:hover {
+                background-color: #efefef;
+                border: none;
+                border-radius: 10px;
+            }
+            a {
+                text-decoration: none;
+                color: $colorSecundario;
+            }
+            i {
+                margin-right: 12px;
+                color: $colorSecundario;
+            }
+        }
+    }
+}
+
+// CARDS //
+.section-cards {
+    height: 80vh;
+     ::-webkit-scrollbar {
+        width: 13px;
+        height: 13px;
+    }
+     ::-webkit-scrollbar-thumb {
+        background: #efefef;
+        border-radius: 10px;
+    }
+     ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(13deg, #c7ceff 14%, #f9d4ff 64%);
+    }
+     ::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: inset 7px 5px 12px #f0f0f0;
+    }
+    .nav-filtros {
+        margin-left: 5%;
+        .lista-filtros {
+            display: flex;
+            .btn-filtro {
+                @extend %buttons;
+                font-size: .9rem;
+            }
+        }
+        li {
+            margin-right: 1rem;
+            list-style: none;
+        }
+    }
+    .todas-cards {
+        margin-left: 10%;
+        h2 {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .btnFavoritos {
+            color: $colorSecundario;
+            &:hover {
+                color: $colorPrincipal;
+                transform: scale(1.4);
+            }
+        }
+    }
+}
+
+// FAVORITOS //
+.fotoFav {
+    width: 10rem;
+}
+
+// MODAL //
+.modal-content {
+    .modal-title {
+        font-family: $font-ppal;
+        color: $colorPrincipal;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    label {
+        font-size: 1rem;
+    }
+    .btn-confirm,
+    .btn-cancel {
+        @extend %buttons;
+        font-size: .9rem;
+    }
+    .titulo-confirm {
+        font-family: $font-ppal;
+        color: $colorPrincipal;
+        font-size: 2.1rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid $colorPrincipal;
+    }
+    .texto-confirm {
+        font-size: 1rem;
+    }
+}
+
+.invalid-feedback-day {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: #003F4A;
+}

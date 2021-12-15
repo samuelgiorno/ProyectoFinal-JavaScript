@@ -1,0 +1,297 @@
+[{
+        "id": 1,
+        "nombre": "Tree House Eco",
+        "tipo": "Machu Picchu",
+        "barrio": "Calle Hunacaure 105, Machu Picchu",
+        "calificacion": 8.0,
+        "precioMedio": 250,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 2,
+        "nombre": "Susanna Inn Hotel",
+        "tipo": "Machu Picchu",
+        "barrio": "Gracia",
+        "calificacion": 8.3,
+        "precioMedio": 200,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 3,
+        "nombre": "Gringo Bill's Boutique Hotel",
+        "tipo": "Machu Picchu",
+        "barrio": "",
+        "calificacion": 8.4,
+        "precioMedio": 120,
+        "oferta": true,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 4,
+        "nombre": "El Mariscal Cusco",
+        "tipo": "Cusco",
+        "barrio": "Urb. Lucrepata F-6-San Blas",
+        "calificacion": 8.7,
+        "precioMedio": 230,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 5,
+        "nombre": "El Truco Hotel",
+        "tipo": "Cusco",
+        "barrio": "Plaza del Regocijo 261, Cusco",
+        "calificacion": 8.5,
+        "precioMedio": 140,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 6,
+        "nombre": "Costa Del Sol Cusco",
+        "tipo": "Cusco",
+        "barrio": "Calle Santa Teresa, 344, Cusco",
+        "calificacion": 9.9,
+        "precioMedio": 155,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 7,
+        "nombre": "Skylodge Adventure",
+        "tipo": "Urubamba",
+        "barrio": "",
+        "calificacion": 8.8,
+        "precioMedio": 135,
+        "oferta": true,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 8,
+        "nombre": "Relais & Chateaux",
+        "tipo": "Urubamba",
+        "barrio": "",
+        "calificacion": 9.3,
+        "precioMedio": 145,
+        "oferta": true,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 9,
+        "nombre": "Casa Chillitupa",
+        "tipo": "Checacupe",
+        "barrio": "Combopata",
+        "calificacion": 7.8,
+        "precioMedio": 128,
+        "oferta": true,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 10,
+        "nombre": "Vertical Sky Luxury",
+        "tipo": "Ollantaytambo",
+        "barrio": "",
+        "calificacion": 9.9,
+        "precioMedio": 240,
+        "oferta": false,
+        "location": { "lat": 41.379507, "lng": 2.153159 }
+    },
+
+    {
+        "id": 11,
+        "nombre": "Peru Quechua's Lodge",
+        "tipo": "Ollantaytambo",
+        "barrio": "",
+        "calificacion": 8.9,
+        "precioMedio": 150,
+        "oferta": true,
+        "location": { "lat": 41.400579, "lng": 2.161156 }
+    },
+
+    {
+        "id": 12,
+        "nombre": "Explora en Valle Sagrado",
+        "tipo": "Urubamba",
+        "barrio": "",
+        "calificacion": 9.2,
+        "precioMedio": 260,
+        "oferta": false,
+        "location": { "lat": 41.403146, "lng": 2.171597 }
+    },
+
+    {
+        "id": 13,
+        "nombre": "Valle verde camping",
+        "tipo": "Urubamba",
+        "barrio": "",
+        "calificacion": 8.8,
+        "precioMedio": 300,
+        "oferta": false,
+        "location": { "lat": 41.385346, "lng": 2.131574 }
+    },
+
+    {
+        "id": 14,
+        "nombre": "Amaru Valle Hotel",
+        "tipo": "Urubamba",
+        "barrio": "Huayllabamba centro poblado huycho",
+        "calificacion": 9.1,
+        "precioMedio": 140,
+        "oferta": false,
+        "location": { "lat": 41.397206, "lng": 2.121322 }
+    },
+
+    {
+        "id": 15,
+        "nombre": "Abadia San Pedro",
+        "tipo": "Cusco",
+        "barrio": "Calle Ccascaparo 116 - Cusco ",
+        "calificacion": 8.9,
+        "precioMedio": 200,
+        "oferta": false,
+        "location": { "lat": 41.401524, "lng": 2.156226 }
+    },
+
+    {
+        "id": 16,
+        "nombre": "Ecolodge Don Felix",
+        "tipo": "Quillabamba",
+        "barrio": "",
+        "calificacion": 8.6,
+        "precioMedio": 250,
+        "oferta": false,
+        "location": { "lat": 41.383404, "lng": 2.178106 }
+    },
+
+    {
+        "id": 17,
+        "nombre": "Anahuarque Hotel",
+        "tipo": "Quillabamba",
+        "barrio": "Born",
+        "calificacion": 9.5,
+        "precioMedio": 320,
+        "oferta": false,
+        "location": { "lat": 41.383670, "lng": 2.183127 }
+    },
+
+    {
+        "id": 18,
+        "nombre": "Sacred Valley Hotel",
+        "tipo": "Urubamba",
+        "barrio": "Les Corts",
+        "calificacion": 9.3,
+        "precioMedio": 220,
+        "oferta": false,
+        "location": { "lat": 41.385063, "lng": 2.121019 }
+    },
+
+    {
+        "id": 19,
+        "nombre": "Valle Sagrado Hotel",
+        "tipo": "Urubamba",
+        "barrio": "Valle Sagrado",
+        "calificacion": 9.3,
+        "precioMedio": 200,
+        "oferta": false,
+        "location": { "lat": 41.398001, "lng": 2.125333 }
+    },
+
+    {
+        "id": 20,
+        "nombre": "Posadas del Inca Yucay",
+        "tipo": "Urubamba",
+        "barrio": "Valle Sagrado",
+        "calificacion": 8.9,
+        "precioMedio": 180,
+        "oferta": false,
+        "location": { "lat": 41.383543, "lng": 2.176043 }
+    },
+
+    {
+        "id": 21,
+        "nombre": "Inkaterra Hotel",
+        "tipo": "Machu Picchu",
+        "barrio": "Machu Picchu Pueblo",
+        "calificacion": 9.0,
+        "precioMedio": 250,
+        "oferta": false,
+        "location": { "lat": 41.398713, "lng": 2.119126 }
+    },
+
+    {
+        "id": 22,
+        "nombre": "Hotel Pachamama",
+        "tipo": "Urubamba",
+        "barrio": "",
+        "calificacion": 8.5,
+        "precioMedio": 210,
+        "oferta": false,
+        "location": { "lat": 41.381787, "lng": 2.166557 }
+    },
+
+    {
+        "id": 23,
+        "nombre": "Illa Hotel",
+        "tipo": "Cusco",
+        "barrio": "El Carmen Alto 166 Barrio de San Blas",
+        "calificacion": 9.2,
+        "precioMedio": 150,
+        "oferta": false,
+        "location": { "lat": 41.398204, "lng": 2.175599 }
+    },
+
+    {
+        "id": 24,
+        "nombre": "Torre Dorada Cusco",
+        "tipo": "Cusco",
+        "barrio": "Calle Los Cipreses 5, Cusco",
+        "calificacion": 7.8,
+        "precioMedio": 180,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 25,
+        "nombre": "Andean Lodges",
+        "tipo": "Checacupe",
+        "barrio": "Raval",
+        "calificacion": 9.2,
+        "precioMedio": 200,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 26,
+        "nombre": "Casafranca",
+        "tipo": "Ollantaytambo",
+        "barrio": "",
+        "calificacion": 9.7,
+        "precioMedio": 180,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    },
+
+    {
+        "id": 27,
+        "nombre": "Kamma Guest House",
+        "tipo": "Ollantaytambo",
+        "barrio": "Ollantaytambo",
+        "calificacion": 9.5,
+        "precioMedio": 180,
+        "oferta": false,
+        "location": { "lat": 0, "lng": 0 }
+    }
+]

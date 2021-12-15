@@ -1,0 +1,12 @@
+%buttons,
+%btn {
+    border: 1px solid #003F4A;
+    border-radius: 15px;
+    padding: .4rem;
+    color: $colorPrincipal;
+    background-color: transparent;
+    &:hover {
+        background-color: $colorPrincipal;
+        color: #ffffff;
+    }
+}

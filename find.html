@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hospedajes Cusco</title>
+        <!-- LINK CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- LINK BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet">
+         <!-- FAVICON -->
+         <link rel="shortcut icon" href="/images/icono/ico180.png" type="image/x-icon">
+    </head>
+    
+    <body>
+        <header class="header shadow" id="header">
+            <div class="container-header find-header container-fluid d-flex justify-content-between align-items-center">
+                <a href="index.html" class="brand-name"><img src="/images/icono/ico180.png" alt="logo"></a>
+                <!-- buscador -->
+                <div class="container-buscador-header shadow-sm row">
+                    <form id="form-search" class="buscador-header" autocomplete="off">
+                        <input class="col-10" type="text" name="hotel-name" id="hotel-name-find" placeholder="Nombre del hotel o ubicación" onkeyup="buscadorPrincipal()">
+                        <button id="btn-submit-header" class="submit-btn-header col-1"><i class="fas fa-search btn-submit"></i></button>
+                    </form>
+                </div>
+                <div class="container-autocomplete-header container">
+                    <ul class="autocomplete row bg-light autocomplete-find"></ul>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="register"><a href="">Regista tu hospedaje</a></div>
+                    <!-- login -->
+                    <div>
+                        <a class="user-login" href="#" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-user"></i></a>
+                        <div class="dropdown-menu">
+                            <form class="px-4 py-3">
+                                <div class="mb-3">
+                                    <label for="exampleDropdownFormEmail1" class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                </div>
+                                <div class="mb-3">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                        <label class="form-check-label" for="dropdownCheck">Recordarme</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-outline-secondary">Inicia Sesión</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">No tienes cuenta? Regístrate!</a>
+                            <a class="dropdown-item" href="#">Haz olvidado tu contrasena?</a>
+                        </div>
+                    </div>
+                    <!-- favoritos -->
+                    <a id="favoritos" class="user-login" id="dropdownFavoritos" data-bs-toggle="dropdown" aria-expanded="false"><i class="far fa-heart"></i></a>
+                    <div class="dropdown-menu">
+                        <li class="item-dropdown titleFavs fs-4 text ms-4">Mis Favoritos</li>
+                        <div id="divFavoritos"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <!-- CARDS -->
+        <div class="d-grid align-items-start justify-content-between w-50">
+            <section class="section-cards mt-5 container">
+                <!-- FILTROS -->
+                <div class="nav-filtros d-flex justify-content-around">
+                    <ul class="lista-filtros">
+                        <!-- POR UBICACIÓN -->
+                        <li>
+                            <div class="dropdown">
+                                <a class="btn btn-filtro dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Distrito de Cusco</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" id="cusco" onclick="filtrosBusqueda(filtroCusco)" href="#">Cusco</a></li>
+                                    <li><a class="dropdown-item" id="checacupe" onclick="filtrosBusqueda(filtroChecacupe)" href="#">Checacupe</a></li>
+                                    <li><a class="dropdown-item" id="machuPicchu" onclick="filtrosBusqueda(filtroMachupicchu)" href="#">Machu Picchu</a></li>
+                                    <li><a class="dropdown-item" id="ollantaytambo" onclick="filtrosBusqueda(filtroOllantaytambo)" href="#">Ollantaytambo</a></li>
+                                    <li><a class="dropdown-item" id="quillabamba" onclick="filtrosBusqueda(filtroQuillabamba)" href="#">Quillabamba</a></li>
+                                    <li><a class="dropdown-item" id="urubamba" onclick="filtrosBusqueda(filtroUrubamba)" href="#">Urubamba</a></li>
+                                    <li><a class="dropdown-item" id="todos" onclick="nuevaCard()" href="#">Todos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- POR PRECIO -->
+                        <li class="precio-medio">
+                            <div class="dropdown">
+                                <a class="btn btn-filtro dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Precio Medio</a>
+                                <ul class="dropdown-menu">
+                                    <li><a id="to20" class="dropdown-item" onclick="filtrosBusqueda(filtroTo20)" href="#">S/100 - S/150</a></li>
+                                    <li><a id="to40" class="dropdown-item" onclick="filtrosBusqueda(filtroTo40)" href="#">S/150 - S/200</a></li>
+                                    <li><a id="to50" class="dropdown-item" onclick="filtrosBusqueda(filtroTo50)" href="#">S/200 - S/300</a></li>
+                                    <li><a id="plus50" class="dropdown-item" onclick="filtrosBusqueda(filtroPlus50)" href="#">+ S/300</a></li>
+                                    <li><a class="dropdown-item" onclick="nuevaCard()" href="#">Todos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <!-- POR CALIFICACIÓN -->
+                        <li class="calificacion">
+                            <div class="dropdown">
+                                <a class="btn btn-filtro dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Calificación</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a id="calificacion7" class="dropdown-item" onclick="filtrosBusqueda(filtroCalificacion7)" href="#">7</a></li>
+                                    <li><a id="calificacion8" class="dropdown-item" onclick="filtrosBusqueda(filtroCalificacion8)" href="#">8</a></li>
+                                    <li><a id="calificacion9" class="dropdown-item" onclick="filtrosBusqueda(filtroCalificacion9)" href="#">9</a></li>
+                                    <li><a id="calificacion10" class="dropdown-item" onclick="filtrosBusqueda(filtroCalificacion10)" href="#">10</a></li>
+                                    <li><a class="dropdown-item" onclick="nuevaCard()" href="#">Todos</a></li>
+                                </ul>
+                            </div>
+                        </li>
+    
+                        <!-- POR OFERTAS -->
+                        <li class="ofertas">
+                            <a class="btn btn-filtro" href="#" role="button" id="dropdownMenuLink" aria-expanded="false" onclick="filtrosBusqueda(filtroOferta)">Ofertas</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- DATOS DE RESERVACION -->
+                <div class="reservation card">
+                    <div id="hotel-reservation" class="reservation-area">
+                        <h2 class="card-title">Tu reservación</h2>
+                        <div class="row d-flex justify-content-between mx-2">
+                          <p class="card-text" id="check-in-p">ENTRADA (Check in)<br>
+                            <span class="card-text-sub">Luego de las 11:00 am</span>
+                          </p>
+                          <p class="card-text" id="check-out-p">SALIDA (Check out)<br>
+                            <span class="card-text-sub">Antes de las 12:00 pm</span>
+                          </p>
+                        </div>
+                        <div class="form-group mx-2">
+                          <p class="card-text" id="pasajero-select">TOTAL DE HUESPEDES:</p> 
+                        </div>
+                        <p class="text-total mx-2" id="valor-total"></p> 
+                       <div id="booking" class="invisible"></div>
+                    </div>
+                </div>
+    
+                <!-- CARDS -->
+                <div id="todosCards" class="d-flex flex-column justify-content-center todas-cards"></div>
+            </section>
+    
+            <!-- MODAL  -->
+            <div class="modal modal-reserva fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"></div>
+        </div>
+    
+        <!-- SCRIPT -->
+        <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhXYDuldOzt0BWvWTZRHMqWp3csCjoFag&callback=initMap"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/find.js"></script>
+        <script src="js/favoritos.js"></script>
+        <script src="js/reservar.js"></script>
+        <!-- JS BOOTSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </body>
+
+</html>
